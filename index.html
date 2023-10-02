@@ -5,7 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="app.js"></script>
 </head>
 <body>
+    <p>Click here to see the date.</p>
+    <button onclick="displayDate()">Right Now</button>
+    <script>
+        function displayDate() {
+            document.getElementById("time").innerHTML = Date();
+        }
+    </script>
+
+    <p id="time"></p>
 </body>
 </html>
